@@ -7,7 +7,7 @@
     <title>Mortal Kombat-премьера фильма 2021</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -36,19 +36,24 @@
         <!-- /.tags -->
         <p class="description">Продолжение легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва, где останется только сильнейший</p>
         <div class="button-group">
-            <button class="button button-primary">Предзаказ фильма</button>
-            <button class="button button-default">
+            <a data-fancybox data-src="#hidden-content" href="javascript:;" class="button button-primary">Предзаказ фильма</ф>
+            <a data-fancybox href="youtube.com/watch?v=gwsaI9txcXs&t" class="button button-default">
                 <img src="img/play.svg" alt="icon:play" class="button-icon">
                 <span class="button-text">Смотреть трейлер</span>
-            </button>
+            </a>
         </div>
         <!-- /.button-group -->
     </section>
+    <div style="display: none;" id="hidden-content">
+        <input type="email"  id="email" placeholder="Введите Ваш е-мейл, чтобы подписаться">
+        <button type="submit">Подписаться</button>
+    </div>
    </div>
    <script
    src="https://code.jquery.com/jquery-3.6.0.min.js"
    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
    crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
    <script src="js/jquery.vide.min.js"></script>
     <script src="js/main.js"></script>
 </body>
